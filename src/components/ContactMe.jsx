@@ -9,8 +9,8 @@ const ContactMe = () => {
         <section className='background_cn'>
             <div className="content_cnt">
                 <h2>Let's Get in Touch</h2>
-                    <a href='#'><img src={FaceB} alt='Facebook Logo' className='imgs'/></a>
-                    <a href='#'><img src={Gmail} alt='Gmail Logo' className='imgs' /></a>
+                    <a href='https://www.facebook.com/lukebenedict.borras'><img src={FaceB} alt='Facebook Logo' className='imgs'/></a>
+                    <a href='mailto:benchborras611@gmail.com'><img src={Gmail} alt='Gmail Logo' className='imgs' /></a>
                     <a href='#'><img src={LinkedIn} alt='LinkedIn Logo' className='imgs'/></a>
                 </div>
         </section>
