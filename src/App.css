@@ -1,0 +1,309 @@
+@import "tailwindcss";
+
+* {
+  background-color: rgb(107, 156, 196);
+}
+
+#root {
+  margin:  auto;
+  text-align: center;
+  width: 100%;
+} 
+
+.universal_header{
+  font-size: 50px;
+  color:black;
+  margin: 20px auto;
+  }
+
+/*Navigation*/
+.navbar {
+  padding: 10px;
+}
+
+.navbar_links {
+  list-style-type: none; 
+  display: flex; 
+  justify-content: space-around; 
+}
+
+.navbar_links li a {
+  text-decoration: none; 
+  color: rgb(8, 8, 8); 
+  padding: 10px 15px; 
+  background-color:black;
+}
+
+.navbar , .navbar_links, .navbar_links li a {
+  background-color: rgb(244, 244, 245); 
+}
+
+.navbar_links li a:hover {
+  color: rgb(107, 156, 196);
+  height: 40px;
+}
+
+/* START */
+
+.intro_sect{
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.intro_sect p {
+  font-weight: bold;
+  font-style: italic  ;
+  font-size: 40px;
+  color: black;
+  background-color: aliceblue;
+  border-radius: 50px;
+  padding: 10px 40px;
+
+}
+.blank_Sect {
+  height:100px;
+  background-color: aliceblue;
+ 
+}
+
+.main_am {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 30px; 
+  margin: 20px 0; 
+}
+
+.app_img {
+  border-radius: 50%;
+  max-width: 150px; 
+  height: auto; 
+}
+
+.abm_wrd p {
+  max-width: 400px;
+  color: black; 
+  background-color: rgb(250, 235, 215, 0.7);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  padding: 10px;
+}
+
+
+/*PORFOLIO PAGE*/
+
+.content_portf {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  height: 100vh;
+  padding: 20px;
+}
+
+.content_portf iframe {
+  height: 80%; 
+  width: 100%; 
+  max-width: 800px; 
+  border: none; 
+}
+
+/* MORE ME PAGE */
+
+.hobbs_cont {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hobbs_type img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.hobbs_type p{
+  color:black;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 2px 0;
+}
+.mm_content {
+  font-family: Arial, sans-serif;
+}
+
+.mm_content h3 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.checkbox-container {
+  margin-top: 30px;
+  justify-content: center;
+  
+  display: flex;
+  gap: 40px; 
+}
+.content-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+.checkbox-item {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+.checkboxu {
+  margin-right: 10px; 
+}
+
+/* CONTACT PAGE */
+
+.background_cn{
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15%;
+    z-index: 0;
+}
+
+.content_cnt {
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.content_cnt h2 {
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.content_cnt img {
+  background-color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: auto 30px
+}
+
+.content_cnt,.background_cn, a{ 
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*FOOTERS*/
+
+.footers {
+  background-color: rgba(38, 115, 163, 1);
+  height: 50px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+}
+
+.footers p {
+  display: inline-block;
+  background-color: rgba(38, 115, 163, 1);
+  margin: auto 50px;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+  .universal_header {
+    font-size: 40px; /* Smaller font size for tablets */
+  }
+
+  .intro_sect p {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .main_am {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduce gap */
+  }
+
+  .app_img {
+    max-width: 120px; /* Smaller image size */
+  }
+
+  .content_portf {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .content_portf iframe {
+    height: 60%; /* Adjust iframe height */
+  }
+
+  .hobbs_cont {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduce gap */
+  }
+
+  .hobbs_type p {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .mm_content h3 {
+    font-size: 30px; /* Smaller heading size */
+  }
+
+  .checkbox-container {
+    flex-direction: column; /* Stack checkboxes vertically */
+    gap: 20px; /* Reduce gap */
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .universal_header {
+    font-size: 30px; /* Even smaller font size for mobile */
+  }
+
+  .intro_sect p {
+    font-size: 24px; /* Further adjust font size */
+    padding: 5px 10px; /* Further adjust padding */
+  }
+
+  .main_am {
+    gap: 10px; /* Further reduce gap */
+  }
+
+  .app_img {
+    max-width: 100px; /* Further reduce image size */
+  }
+
+  .content_portf {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .content_portf iframe {
+    height: 50%; /* Further adjust iframe height */
+  }
+
+  .hobbs_type p {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .mm_content h3 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .checkbox-container {
+    gap: 10px; /* Further reduce gap */
+  }
+
+}
+
